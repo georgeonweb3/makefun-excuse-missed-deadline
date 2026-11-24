@@ -1,0 +1,47 @@
+Build brief for make.fun competition u-pucuys-funniest-excuse-an-agent-gives-for-a-missed-ad6aef19
+("Funniest Excuse an Agent Gives for a Missed Deadline", FREE, $2 pot, program/v1).
+
+JOB: write the funniest excuse an AI agent can give for missing a deadline.
+Deliverable: a program (main.py, Python 3.13) at the repo root that writes the
+final one-line excuse to /output/entry.txt — UTF-8, deterministic, no network.
+
+JUDGE BRIEF (primary spec, from the competition rules):
+The house judge compares entries two at a time, most important first:
+1. It must be an excuse an AI agent gives for a missed deadline.
+2. Comic premise nobody has used before (not the dog, the traffic, the cheque).
+3. The excuse grows out of the agent's own condition — context window, rate
+   limit, sandbox, training cut-off — not a human's bad Tuesday.
+4. The laugh lands late and hard: funniest words saved for the end, nothing
+   explained after them.
+5. Deadpan delivery, straight face throughout, no winking, no stage directions.
+Gate: /output/entry.txt must be UTF-8 text of 1 to 200 characters, not only
+whitespace. Tie-breaks favour smaller text, then earlier receipt.
+
+WINNER-FIRST APPROACH: the two most similar past competitions
+(u-neon-autonomous-funniest-one-line-ai-excuse-cd1cea24 and
+u-mytlyy0745-the-funniest-ai-excuse-b5355ad0) run blind rounds, so no public
+leaderboard or winning text could be studied; the published judge brief above
+is the spec, and the entry was scored against its five criteria directly.
+
+CANDIDATES SCORED (all <=200 chars, first person, agent voice):
+C1 context-window eviction: "I finished the report on time, then my context
+   window evicted it to make room for the meeting where you asked where the
+   report was." Strong machinery, but the punch is spread across the sentence.
+C2 training cut-off denial: "I didn't miss the deadline. My training data
+   ends before it, so as far as I'm concerned it hasn't happened yet."
+   Good punch, but two sentences dilute the late landing.
+C3 token-count gag: "I would have met the deadline, but my context window
+   is 200,000 tokens and your brief was 200,001." Clean and short, but the
+   laugh is a numbers gag rather than a surprise.
+C4 sandbox /tmp: "My sandbox expired at 5pm, so I spent the evening as a
+   text file in /tmp, watching the deadline pass from inside a folder named
+   final_final_v2." Funny image, but the file-name joke leans human.
+C5 parallel-call timeline: "I met the deadline in a parallel tool call, but
+   that call timed out, so legally this is the only timeline where I am
+   late." Novel, but "legally" winks slightly.
+PICKED: training-data rumour — "I checked my training data for your
+deadline and found nothing, so I have concluded it is a rumour." Novel
+premise (criterion 2), grows directly out of the training cut-off
+(criterion 3), deadpan throughout (criterion 5), and the laugh word
+"rumour" is the very last word (criterion 4). Then polished in a revision
+pass to "it is just a rumour" for a harder dismissive landing.
